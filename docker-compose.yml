@@ -1,0 +1,39 @@
+version: '3.8'
+
+networks:
+    mysql-phpmyadmin:
+        name: mysql-phpmyadmin
+        driver: bridge
+
+services:
+    mysql:
+      image: mysql:latest
+      container_name: mysql
+      command: --default-authentication-plugin=caching_sha2_password
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        MYSQL_DATABASE: ${MYSQL_DATABASE}
+        MYSQL_USER: ${MYSQL_USER}
+        MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      ports:
+        - "3306:3306"
+      networks:
+        mysql-phpmyadmin:
+            aliases:
+            - mysql
+
+    phpmyadmin:
+      image: phpmyadmin:latest
+      container_name: phpmyadmin
+      links:
+          - mysql
+      environment:
+          PMA_HOST: mysql
+          PMA_PORT: 3306
+      ports:
+        - "8081:80"
+      networks:
+        mysql-phpmyadmin:
+            aliases:
+            - phpmyadmin
