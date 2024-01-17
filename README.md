@@ -1,1 +1,1 @@
-# hackathon2024
+# Gomibo Hackathon 2024
