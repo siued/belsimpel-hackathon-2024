@@ -2,7 +2,7 @@
 <img src="https://werkenbijbelsimpel.nl/wp-content/uploads/2023/01/Belsimpel-A-Gomibo-company_RGB_op-wit.svg" width="300" height="150">
 
 ## Installation guide
-This section contains all relevant information to setup the necessary things to participate in the hackathon. You will be setting up a Docker environment running two services: MySQL and PHPMyAdmin. We've created a docker-compose.yml file, which should do most of the work for you.
+This section contains all relevant information to setup the necessary things to participate in the hackathon. You will be setting up a Docker environment running two services: MySQL and PHPMyAdmin. We've created a docker-compose.yml file which should do most of the work for you.
 
 ### Clone Github repository
 Start by cloning the Github repository on your device. Most of you will probably have done this before, but if not we highly recommend the following **before** cloning the repository.
@@ -18,6 +18,31 @@ git clone git@github.com:belsimpel/hackathon2024.git
 ```
 3. Navigate into the repository.
 ```
-cd hackathone2024
+cd hackathon2024
 ```
-4. Ready!
+4. You should now see the project files!
+5. Open the hackathon2024 directory on your favorite IDE.
+6. Edit the `.env` environmental file. You should add some credentials.
+7. Now it's time to start spinning up the Docker environment.
+8. First up, read through this installation guide for installing Docker and Docker Compose.
+9. In a terminal, move to the projectfolder again (hackathon2024).
+10. Pull the latest images.
+```
+docker-compose pull
+```
+11. Start the docker environment.
+```
+docker-compose up
+```
+*Tip!:* add the -d flag to run the container in the background.
+12. Go to http://localhost:8081/ and you should see PhpMyAdmin! You're now good to go. :finish:
+13. To shut everything down, just enter the following in your terminal.
+```
+docker-compose down
+```
+
+### Assignment
+When you clone the repository, you will also find the assignment in your directory which will be locked by a password. On the day of the hackathon, you will receive the password. Make sure to ready through the assignment carefully!
+
+### Working together
+How you work together is up for you to decide, but we recommend setting up a Github repository. You should already be assigned to a team, please contact each other and discuss how you want to work together. It might save time to already set up a Github repository so you can start working on the assigenment as soon as possible.
