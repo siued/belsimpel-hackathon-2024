@@ -21,23 +21,29 @@ git clone git@github.com:belsimpel/hackathon2024.git
 cd hackathon2024
 ```
 4. You should now see the project files!
-5. Open the hackathon2024 directory on your favorite IDE.
-6. Edit the `.env` environmental file. You should add some credentials.
-7. Now it's time to start spinning up the Docker environment.
-8. First up, read through this installation guide for installing Docker and Docker Compose.
-9. In a terminal, move to the projectfolder again (hackathon2024).
-10. Pull the latest images.
+
+### Setup credentials
+1. Open the hackathon2024 directory on your favorite IDE.
+2. Edit the `.env` environmental file. You should add some credentials.
+
+### Start Docker container
+1. Now it's time to start spinning up the Docker environment.
+2. First up, read through this installation guide for installing Docker and Docker Compose.
+3. In a terminal, move to the projectfolder again (hackathon2024).
+4. Pull the latest images.
 ```
 docker-compose pull
 ```
-11. Start the docker environment.
+5. Start the docker environment.
 ```
 docker-compose up
 ```
 *Tip, add the `-d` flag to run the container in the background.*
 
-12. Go to http://localhost:8081/ and you should see PhpMyAdmin! You're now good to go. :finish:
-13. To shut everything down, just enter the following in your terminal.
+6. Go to http://localhost:8081/ and you should see PhpMyAdmin! You're now good to go. :finish:
+
+### Shutting down
+1. To shut everything down, just enter the following in your terminal.
 ```
 docker-compose down
 ```
