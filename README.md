@@ -40,7 +40,7 @@ docker-compose up
 ```
 *Tip, add the `-d` flag to run the container in the background.*
 
-6. Go to http://localhost:8081/ and you should see PhpMyAdmin! You're now good to go. :finish:
+6. Go to http://localhost:8081/ and you should see PhpMyAdmin! You're now good to go.
 
 ### Shutting down
 1. To shut everything down, just enter the following in your terminal.
@@ -49,7 +49,7 @@ docker-compose down
 ```
 
 ### Assignment
-When you clone the repository you will also find the assignment in your directory which will be locked by a password. On the day of the hackathon, you will receive the password. Make sure to ready through the assignment carefully!
+On the day of the hackathon, we'll push the assignment to the repository. Make sure to read through the assignment carefully!
 
 ### Working together
 How you work together is up for you to decide, but we recommend setting up a Github repository. You should already be assigned to a team, please contact each other and discuss how you want to work together. It might save time to set up a Github repository already so you can start working on the assigenment as soon as possible.
