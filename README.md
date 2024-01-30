@@ -49,7 +49,7 @@ docker-compose down
 ```
 
 ### Assignment
-On the day of the hackathon, we'll push the assignment to the repository. Make sure to read through the assignment carefully!
+For the assignment you will be designing and implementing a   On the day of the hackathon, we'll push the assignment to the repository. Make sure to read through the assignment carefully! 
 
 ### Working together
-How you work together is up for you to decide, but we recommend setting up a Github repository. You should already be assigned to a team, please contact each other and discuss how you want to work together. It might save time to set up a Github repository already so you can start working on the assigenment as soon as possible.
+How you work together is up for you to decide, but we recommend setting up a Github repository. You should already be assigned to a team, please contact each other and discuss how you want to work together. It might save time to set up a Github repository already so you can start working on the assigenment as soon as possible. Your group should consist of a mix of developers. Try to let everyone perform a task he/she likes and can handle with their skill level and knowledge. Also, think of a cool team name!
