@@ -28,6 +28,8 @@ cd hackathon2024
 
 ### Start Docker container
 1. Now it's time to start spinning up the Docker environment.
+2. First up, install Docker using [this guide](https://docs.docker.com/get-docker/).
+3. Next, install Docker Compose by using [this guide](https://docs.docker.com/compose/install/).
 2. First up, read through this installation guide for installing Docker and Docker Compose.
 3. In a terminal, move to the projectfolder again (hackathon2024).
 4. Pull the latest images.
@@ -49,7 +51,7 @@ docker-compose down
 ```
 
 ### Assignment
-For the assignment you will be designing and implementing a   On the day of the hackathon, we'll push the assignment to the repository. Make sure to read through the assignment carefully! 
+We're not spoiling the full assignment just yet, but it will be focused on our warehouse. Together with your team you will be designing a new warehouse system. Before coding, you will think of ways to implement the requirements in a nice way. On the day of the hackathon, we'll push the assignment to [this folder](/assignment/). Make sure to read through the assignment carefully! 
 
 ### Working together
 How you work together is up for you to decide, but we recommend setting up a Github repository. You should already be assigned to a team, please contact each other and discuss how you want to work together. It might save time to set up a Github repository already so you can start working on the assigenment as soon as possible. Your group should consist of a mix of developers. Try to let everyone perform a task he/she likes and can handle with their skill level and knowledge. Also, think of a cool team name!
