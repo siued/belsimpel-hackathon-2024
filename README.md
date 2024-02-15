@@ -2,7 +2,9 @@
 <img src="https://werkenbijbelsimpel.nl/wp-content/uploads/2023/01/Belsimpel-A-Gomibo-company_RGB_op-wit.svg" width="300" height="150">
 
 ## Installation guide
-This section contains all relevant information to setup the necessary things to participate in the hackathon. You will be setting up a Docker environment running two services: MySQL and PHPMyAdmin. We've created a docker-compose.yml file which should do most of the work for you.
+This section contains all relevant information to setup the necessary things to participate in the hackathon. You will be setting up a Docker environment running two services: MySQL and PHPMyAdmin. We've created a docker-compose.yml file which should do most of the work for you. 
+#### Important to note: 
+You're free to use whatever database management system and programming language. This is just to give you something to work with, but we're giving you a lot of freedom. As long as your able to store/retrieve data from a database, you should be okay!
 
 ### Clone Github repository
 Start by cloning the Github repository on your device. Most of you will probably have done this before, but if not we highly recommend the following **before** cloning the repository.
