@@ -1,4 +1,4 @@
-#import database_controller as database  # Database Controller class that implements getters and setters
+# import database_controller as database  # Database Controller class that implements getters and setters
 import location_manager
 
 # import order retrieval
