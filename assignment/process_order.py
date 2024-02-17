@@ -10,7 +10,7 @@ def process_order(order):
     
     print(eans)
 
-    items = 0
+    items = 1
     while items < len(order):
         item = input("Scan the item (EAN tag): ")
         if item == "exit":
@@ -19,11 +19,12 @@ def process_order(order):
         if verify_ean.ean_verified(item, eans):
             print("Item scanned.")
             items += 1
+            eans.pop(eans.index(item))
         else:
             print("Invalid EAN tag. Please scan again.")
     print("All correct items scanned. Processing the order.")
 
-    stock_manager.remove_from_stock()
+    stock_manager.remove_from_stock(order[1])
     return
         
     
