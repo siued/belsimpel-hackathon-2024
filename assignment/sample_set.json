@@ -1,0 +1,45 @@
+[
+    {
+        "id": "3526",
+        "description": "Google Pixel 8 128GB Black",
+        "IMEI": "331065863440734",
+        "EAN": "840244706692",
+        "price": "450.00"
+    },
+    {
+        "id": "2566",
+        "description": "Apple iPad Air 2022 WiFi 64GB Gray",
+        "EAN": "194252794524",
+        "identifier": "SF9NR2H5X29",
+        "price": "577.00"
+    },
+    {
+        "id": "3558",
+        "description": "Apple iPad 2021 WiFi + 4G 64GB Black",
+        "IMEI": "355818725391334",
+        "EAN": "194252521267",
+        "identifier": "355818725391334",
+        "price": "427.19"
+    },
+    {
+        "id": "4327",
+        "description": "Mobilize PU-leer Book Case Black Samsung Galaxy A54",
+        "EAN": "8718256986642",
+        "price": "3.54"
+    },
+    {
+        "id": "1874",
+        "description": "Ben Prepaid",
+        "prepaid_sim": "8931162111600665944",
+        "prepaid_tel": "0641147476",
+        "EAN": "8715872071165",
+        "price": "5.00"
+    },
+    {
+        "id": "1546",
+        "description": "Sony WH-1000XM4 Black",
+        "EAN": "4548736112117",
+        "identifier": "S014235588L",
+        "price": "220.00"
+    }
+]

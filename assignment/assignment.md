@@ -1,1 +1,0 @@
-![empty](https://i.redd.it/ldbo7yn202m21.jpg)
