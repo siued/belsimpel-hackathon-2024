@@ -1,4 +1,4 @@
-#import database_controller as database  # Database Controller class that implements getters and setters
+# import database_controller as database  # Database Controller class that implements getters and setters
 import location_manager
 import db_connection as database
 
@@ -10,6 +10,7 @@ def add_new_item_to_database(item, warehouse="warehouse1"):
     db_location, _ = location_manager.create_new_item_location(item, warehouse)
     item['location'] = db_location
     item['stock'] = 1
+
 
     # here check for stock and either add new item or increase stock
     database.add_item(item)
