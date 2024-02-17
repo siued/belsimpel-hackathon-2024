@@ -15,6 +15,10 @@ def process_order(order):
     print("Customer: " + order[CUSTOMER] + " ordered the following items:")
     print(eans)
 
+    locations = [stock_manager.get_item_location_from_database(item) for item in order_items]
+    print("Item locations:")
+    print(locations)
+
     items = 1
     while items < len(eans):
         item = input("Scan the item (EAN tag), type exit to exit: ")

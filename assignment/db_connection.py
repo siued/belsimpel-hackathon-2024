@@ -87,7 +87,7 @@ def get_location(ean):
     cursor = connection.cursor()
 
     # Retrieve the item from the database
-    select_item_query = f"SELECT location FROM product WHERE EAN = {id}"
+    select_item_query = f"SELECT location FROM product WHERE EAN = {ean}"
     cursor.execute(select_item_query)
     item = cursor.fetchone()
 
@@ -95,4 +95,4 @@ def get_location(ean):
     cursor.close()
     connection.close()
 
-    return item['location']
+    return item['location'] if item else None
