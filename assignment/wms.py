@@ -1,8 +1,6 @@
 import json
 import get_order
-
-def add_items(items):
-    pass
+import add_items
 
 def wms():
     print("Welcome to the Warehouse Management System")
@@ -13,11 +11,11 @@ def wms():
         print("Adding new items")
         with open("items.json", "w") as file:
             items = json.read(file)
-        add_items(items)
+        add_items.add_items(items)
     elif command == "order":
         print("Placing a new order")
         order = get_order()
-        process_order(order)
+        process_order.process_order(order)
     elif command == "exit":
         exit()
 
