@@ -1,6 +1,7 @@
 import json
 import get_order
 import add_items
+import process_order
 
 def wms():
     print("Welcome to the Warehouse Management System")
