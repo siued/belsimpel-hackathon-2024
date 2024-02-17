@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql:3306
--- Generation Time: Feb 17, 2024 at 01:37 PM
+-- Generation Time: Feb 17, 2024 at 02:38 PM
 -- Server version: 8.3.0
 -- PHP Version: 8.2.16
 
@@ -30,15 +30,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `product` (
   `Description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `EAN` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `Price` float DEFAULT NULL,
+  `Price` int DEFAULT NULL,
   `Stock` int DEFAULT NULL,
-  `IMEI` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `Prepaid_sim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `Prepaid_tel` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `IMEI` text,
+  `Prepaid_sim` text,
+  `Prepaid_tel` text,
   `ID` int NOT NULL,
-  `identifier` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `location` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `warehouse` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
+  `identifier` text,
+  `location` text,
+  `warehouse` text,
+  `CustomerID` int DEFAULT NULL,
+  `Fullfill` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
