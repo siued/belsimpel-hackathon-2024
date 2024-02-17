@@ -6,7 +6,7 @@ EAN = "EAN"
 def process_order(order):
     eans = []
     for i in order[1]:
-        eans.append[i[EAN]]
+        eans.append[i][EAN]
     
     print(eans)
 
