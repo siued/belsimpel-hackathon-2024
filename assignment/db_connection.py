@@ -96,3 +96,18 @@ def get_location(id):
     connection.close()
 
     return item['location']
+
+def get_order(id):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    # Retrieve the item from the database
+    select_item_query = f"SELECT * FROM product WHERE CustomerID = {id}"
+    cursor.execute(select_item_query)
+    item = cursor.fetchall()
+
+    # Close the cursor and connection
+    cursor.close()
+    connection.close()
+
+    return item

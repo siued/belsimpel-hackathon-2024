@@ -3,8 +3,9 @@ import json
 import add_items
 import get_order
 import process_order
+import check_order
 
-COMMANDS = "add/order/exit"
+COMMANDS = "add/order/exit/customer_order"
 
 
 def wms():
@@ -23,6 +24,9 @@ def wms():
                 print("Placing a new order")
                 order = get_order.get_order()
                 process_order.process_order(order)
+            case "customer_order":
+                print("Checking a customer's order")
+                check_order.check_order()
             case "exit":
                 exit()
 
