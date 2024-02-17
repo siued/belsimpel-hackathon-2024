@@ -12,8 +12,8 @@ def create_new_item_location(item, warehouse_name):
         return db_location, user_location
 
 
-def convert_db_location_to_human_readable(db_location, item):
-    if warehouse == "warehouse1":
+def convert_db_location_to_human_readable(db_location, item, warehouse_name="warehouse1"):
+    if warehouse_name == "warehouse1":
         user_location = warehouse.get_human_readable_location(
             db_location, item
         )

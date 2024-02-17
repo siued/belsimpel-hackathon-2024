@@ -16,7 +16,7 @@ def wms():
         match command:
             case "add":
                 print("Adding new items")
-                with open("./assignment/sample_set.json", "r") as file:
+                with open("./assignment/full_set.json", "r") as file:
                     items = json.load(file)
                 add_items.add_items(items)
             case "order":

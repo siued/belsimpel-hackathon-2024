@@ -17,11 +17,12 @@ def process_order(order):
 
     locations = [stock_manager.get_item_location_from_database(item) for item in order_items]
     print("Item locations:")
-    print(locations)
+    for location in locations:
+        print(location)
 
     items = 1
     while items < len(eans):
-        item = input("Scan the item (EAN tag), type exit to exit: ")
+        item = input("Scan the item (EAN tag), type exit to cancel: ")
         if item == "bypass":
             break
 

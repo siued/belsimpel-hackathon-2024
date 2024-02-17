@@ -6,14 +6,15 @@ import db_connection as database
 # import new item retreival
 
 
-def add_new_item_to_database(item, warehouse="warehouse1"):
-    db_location, _ = location_manager.create_new_item_location(item, warehouse)
-    item['location'] = db_location
-    item['stock'] = 1
+def add_new_items_to_database(items, warehouse="warehouse1"):
+    for item in items:
+        db_location, _ = location_manager.create_new_item_location(item, warehouse)
+        item['location'] = db_location
+        item['stock'] = 1
 
 
     # here check for stock and either add new item or increase stock
-    database.add_item(item)
+    database.add_items(items)
 
 
 # def add_order_to_database(order):

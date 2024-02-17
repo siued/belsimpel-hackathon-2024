@@ -26,6 +26,7 @@ def get_connection():
     return connection
 
 
+# doesn't work, create the table manually by executing product.sql in PHPmyAdmin
 def create_table():
     connection = get_connection()
     cursor = connection.cursor()
@@ -57,9 +58,8 @@ def add_items(data):
     for record in data:
         data_to_insert = tuple(record.get(key, None) for key in data[0].keys())
         cursor.execute(insert_data_query, data_to_insert)
-
-    # Commit the changes to the database
-    connection.commit()
+        # Commit the changes to the database
+        connection.commit()
 
     # Close the cursor and connection
     cursor.close()
@@ -90,9 +90,11 @@ def get_location(ean):
     select_item_query = f"SELECT location FROM product WHERE EAN = {ean}"
     cursor.execute(select_item_query)
     item = cursor.fetchone()
+    cursor.fetchall()
+    connection.commit()
 
     # Close the cursor and connection
     cursor.close()
     connection.close()
 
-    return item['location'] if item else None
+    return item[0]
