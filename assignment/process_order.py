@@ -8,11 +8,12 @@ def process_order(order):
     for i in order[1]:
         eans.append[i[EAN]]
     
+    print("Customer: " + order[0] + " ordered the following items:")
     print(eans)
 
     items = 0
     while items < len(order):
-        item = input("Scan the item (EAN tag): ")
+        item = input("Scan the item (EAN tag), type exit to exit: ")
         if item == "exit":
             print("Stopped processing order")
             return
@@ -26,5 +27,3 @@ def process_order(order):
     stock_manager.remove_from_stock()
     return
         
-    
-    
