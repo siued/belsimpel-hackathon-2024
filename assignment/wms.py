@@ -19,7 +19,7 @@ def wms():
                 add_items.add_items(items)
             case "order":
                 print("Placing a new order")
-                order = get_order()
+                order = get_order.get_order()
                 process_order.process_order(order)
             case "exit":
                 exit()

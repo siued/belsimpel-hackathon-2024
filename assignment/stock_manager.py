@@ -23,8 +23,8 @@ def add_new_item_to_database(item, warehouse="warehouse1"):
 #     return database.get_item(item)
 
 
-def get_item_location_from_database(id):
-    return database.get_location(id)
+def get_item_location_from_database(ean):
+    return location_manager.convert_db_location_to_human_readable(database.get_location(ean))
 
 
 def remove_item_from_database(items_to_remove):

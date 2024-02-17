@@ -82,12 +82,12 @@ def get_item(id):
     return item
 
 
-def get_location(id):
+def get_location(ean):
     connection = get_connection()
     cursor = connection.cursor()
 
     # Retrieve the item from the database
-    select_item_query = f"SELECT location FROM product WHERE id = {id}"
+    select_item_query = f"SELECT location FROM product WHERE EAN = {id}"
     cursor.execute(select_item_query)
     item = cursor.fetchone()
 
