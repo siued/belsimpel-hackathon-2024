@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql:3306
--- Generation Time: Feb 17, 2024 at 11:50 AM
+-- Generation Time: Feb 17, 2024 at 01:37 PM
 -- Server version: 8.3.0
 -- PHP Version: 8.2.16
 
@@ -24,21 +24,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prduct`
+-- Table structure for table `product`
 --
 
-CREATE TABLE `prduct` (
-  `Description` text NOT NULL,
-  `EAN` text NOT NULL,
-  `Price` float NOT NULL,
-  `Stock` int NOT NULL,
-  `IMEI` text NOT NULL,
-  `Prepaid_sim` text NOT NULL,
-  `Prepaid_tel` text NOT NULL,
+CREATE TABLE `product` (
+  `Description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `EAN` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Price` float DEFAULT NULL,
+  `Stock` int DEFAULT NULL,
+  `IMEI` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Prepaid_sim` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Prepaid_tel` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `ID` int NOT NULL,
-  `identifier` text NOT NULL,
-  `location` text NOT NULL,
-  `warehouse` text NOT NULL
+  `identifier` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `location` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `warehouse` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -46,9 +46,9 @@ CREATE TABLE `prduct` (
 --
 
 --
--- Indexes for table `prduct`
+-- Indexes for table `product`
 --
-ALTER TABLE `prduct`
+ALTER TABLE `product`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -56,9 +56,9 @@ ALTER TABLE `prduct`
 --
 
 --
--- AUTO_INCREMENT for table `prduct`
+-- AUTO_INCREMENT for table `product`
 --
-ALTER TABLE `prduct`
+ALTER TABLE `product`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
