@@ -2,7 +2,7 @@ import json
 import random
 
 def get_order():
-    input_file = open ('full_set.json')
+    input_file = open('./assignment/full_set.json')
     products = json.load(input_file)
 
     number_of_products = random.randint(1,10)

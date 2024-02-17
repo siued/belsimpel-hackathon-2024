@@ -8,6 +8,7 @@ import location_manager
 def add_new_item_to_database(item, warehouse="warehouse1"):
     db_location, _ = location_manager.create_new_item_location(item, warehouse)
 
+    print(item, db_location)
     database.add_item(item)
     database.add_location_to_item(item, db_location)
 
