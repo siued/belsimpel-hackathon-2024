@@ -31,7 +31,7 @@ def create_table():
     cursor = connection.cursor()
 
     # Read the SQL file (file.sql) containing the CREATE TABLE statement
-    sql_file_path = "assignment\\product.sql"  # Adjusted path
+    sql_file_path = "/Users/matejkucera/Desktop/belsimpel-hackathon-2024/assignment/product.sql"  # Adjusted path
     with open(sql_file_path, "r") as sql_file:
         create_table_query = sql_file.read()
 
@@ -66,9 +66,33 @@ def add_items(data):
     connection.close()
 
 
-create_table()
+def get_item(id):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    # Retrieve the item from the database
+    select_item_query = f"SELECT * FROM product WHERE id = {id}"
+    cursor.execute(select_item_query)
+    item = cursor.fetchone()
+
+    # Close the cursor and connection
+    cursor.close()
+    connection.close()
+
+    return item
 
 
-with open("assignment\\sample_set.json", "r") as file:
-    items = json.load(file)
-    add_items(items)
+def get_location(id):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    # Retrieve the item from the database
+    select_item_query = f"SELECT location FROM product WHERE id = {id}"
+    cursor.execute(select_item_query)
+    item = cursor.fetchone()
+
+    # Close the cursor and connection
+    cursor.close()
+    connection.close()
+
+    return item['location']
