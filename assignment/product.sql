@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prduct`
+-- Table structure for table `product`
 --
 
-CREATE TABLE `prduct` (
+CREATE TABLE `product` (
   `Description` text NOT NULL,
   `EAN` text NOT NULL,
   `Price` float NOT NULL,
@@ -46,9 +46,9 @@ CREATE TABLE `prduct` (
 --
 
 --
--- Indexes for table `prduct`
+-- Indexes for table `product`
 --
-ALTER TABLE `prduct`
+ALTER TABLE `product`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -56,9 +56,9 @@ ALTER TABLE `prduct`
 --
 
 --
--- AUTO_INCREMENT for table `prduct`
+-- AUTO_INCREMENT for table `product`
 --
-ALTER TABLE `prduct`
+ALTER TABLE `product`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
