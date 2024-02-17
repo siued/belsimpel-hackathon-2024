@@ -15,5 +15,8 @@ def get_order():
         'order_items': random.sample(products, number_of_products)
     }
 
+    return order
+
+
 if __name__ == "__main__":
     print(get_order())
