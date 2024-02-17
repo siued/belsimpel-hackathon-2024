@@ -20,7 +20,7 @@ def process_order(order):
     for location in locations:
         print(location)
 
-    items = 1
+    items = 0
     while items < len(eans):
         item = input("Scan the item (EAN tag), type exit to cancel: ")
         if item == "bypass":
