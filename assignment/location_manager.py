@@ -2,8 +2,8 @@ import warehouse
 
 # in the future, this extends to multiple warehouses
 
-def create_new_item_location(item, warehouse):
-    if warehouse == 'warehouse1':
+def create_new_item_location(item, warehouse_name):
+    if warehouse_name == 'warehouse1':
         db_location = warehouse.get_location_for_new_item(item)
         user_location = warehouse.get_human_readable_location(db_location, item)
         return db_location, user_location

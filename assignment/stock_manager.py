@@ -1,11 +1,11 @@
-import database_controller as database  # Database Controller class that implements getters and setters
+#import database_controller as database  # Database Controller class that implements getters and setters
 import location_manager
 
 # import order retrieval
 # import new item retreival
 
 
-def add_new_item_to_database(item, warehouse):
+def add_new_item_to_database(item, warehouse="warehouse1"):
     db_location, _ = location_manager.create_new_item_location(item, warehouse)
 
     database.add_item(item)

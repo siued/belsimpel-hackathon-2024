@@ -10,8 +10,8 @@ def wms():
 
     if command == "add":
         print("Adding new items")
-        with open("items.json", "w") as file:
-            items = json.read(file)
+        with open("./assignment/sample_set.json", "r") as file:
+            items = json.load(file)
         add_items.add_items(items)
     elif command == "order":
         print("Placing a new order")
